@@ -61,10 +61,7 @@ void lfu::work(int a,double &per_time)
             {
                 if(pair.first == a)
                 {
-                    lfu_total_time += 2*memory_access;
-                    per_time += 2*memory_access;
                     flag = false;
-
                     break;
                 }
                 index++;
